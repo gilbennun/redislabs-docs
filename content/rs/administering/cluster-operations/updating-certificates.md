@@ -71,3 +71,11 @@ commands:
 
 After you set the minimum TLS version, RS does not accept communications with
 TLS versions older than the specified version.
+
+
+addition :
+how to regenerate an expired self-signed certificate that was created as part of the cluster installation.
+
+1. The user can use the following script to create a new self-signed certificate:/ opt/redislabs/sbin/generate_cert.sh api api
+2. The user should follow the REST API doc to replace the expired certificate with the one created in step 1
+
