@@ -71,3 +71,7 @@ commands:
 
 After you set the minimum TLS version, RS does not accept communications with
 TLS versions older than the specified version.
+
+Add instruction on how to generate new certificate when existing certificate expires :
+create new self signed certificate example :/opt/redislabs/sbin/generate_cert.sh  api api 
+new certificate will be created in /etc/opt/redislabs/
