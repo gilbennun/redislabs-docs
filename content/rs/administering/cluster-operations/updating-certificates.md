@@ -71,3 +71,11 @@ commands:
 
 After you set the minimum TLS version, RS does not accept communications with
 TLS versions older than the specified version.
+
+to regenerate a new self-signed certificate  please follow these steps:
+1. login to master node via ssh 
+2. move the following files to a different directory : /etc/opt/redislabs/api_cert.pem /etc/opt/redislabs/cm_cert.pem
+3. execute : /opt/redislabs/sbin/generate_cert.sh api api
+   ( this will generate a self signed certificate and put it in /etc/opt/redislabs/ )
+4. execute : /opt/redislabs/sbin/generate_cert.sh cm cm 
+   ( this will generate a self signed certificate and put it in /etc/opt/redislabs/ )
