@@ -116,6 +116,7 @@ Now the VPC Peering request is accepted. Its status in the VPC Peering tab in th
 ### CIDR Whitelist
 
 If you are deploying Redis Cloud Pro on your own infrastructure, you can configure the CIDR Whitelist for your subscription.
+The CIDR whitelist feature exists for subscriptions confiured on AWS infrastructure.
 The CIDR whitelist defines a range of IP addresses and AWS security groups that control inbound
 and outbound traffic to the Redis Cloud Pro VPC. When you manage the CIDR whitelist with security groups you
 can easily use the same security groups to manage access to your application.
