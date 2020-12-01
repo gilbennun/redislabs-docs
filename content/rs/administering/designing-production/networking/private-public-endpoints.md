@@ -39,6 +39,8 @@ available for the databases in the cluster.
 You can enable it by using the ***rladmin suffix add*** command.
 
 To add an internal FQDN/IP to a cluster:
+this comand will fail as the clustername.domain.com already exists, we need to specify a unique name, example: rladmin suffix add name aaa.bbb internal
+We should also instruct the customer to add a dns record
 
 ```sh
 rladmin suffix add name <internal.clustername.domain.com> internal
