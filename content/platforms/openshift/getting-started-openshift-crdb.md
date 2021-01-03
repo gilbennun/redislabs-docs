@@ -37,7 +37,9 @@ The routes are configured with TLS passthrough.
 Routes should have unique hostnames across a Kubernetes cluster.
 {{< /note >}}
 
-## Steps for creating an Active-Active deployment with Service Broker
+------Please add procedure that uses crdb-cli in addition to Service Broker -----
+
+## Steps for creating an Active-Active deployment with Service Broker 
 
 Before you create an Active-Active deployment with Service Broker, you must create a cluster
 using the REC custom resource, with a Service Broker deployment as covered in
