@@ -72,3 +72,9 @@ When the last pod is manually deleted, the recovery process resumes.
     ```sh
     supervisorctl restart sentinel_service
     ```
+
+usually after cluster recovery it impossible to perform db recovery, bceuase the command rladmin stats shows "missing files" instead of ready.
+the missing files refer to rdb or aof file 
+the file is considered missing because it is located on the wrong pod ( this is usualy the case after cluster crash)
+to solve the problem we copy the file to the correct pod ( or to all pods, it is easier and faster) and rename the file from appendonly-5.aof.prev to appendonly-5.aof
+can we document this ?
