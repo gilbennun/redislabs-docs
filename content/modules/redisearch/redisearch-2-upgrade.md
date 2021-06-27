@@ -92,3 +92,8 @@ The `add-prefix` option is only recommended when you want to index all of the ha
     1. Press **Q** to quit the `RediSearch_Syncer.py`.
 
 You can now redirect your database connections to the database with RediSearch 2.x.
+
+I have two comments:
+the doc should mention that before using the rediSearch_syncer there is a need to disable tls on source and destination db
+the doc shouls mention that once sync in complete , the custoer should create indexes
+
