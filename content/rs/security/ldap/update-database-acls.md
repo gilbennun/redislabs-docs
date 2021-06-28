@@ -37,3 +37,21 @@ As a result, we recommend ordering roles so that higher access roles appear befo
 - Enable and configure [role-based LDAP]({{< relref "/rs/security/ldap/enable-role-based-ldap.md" >}})
 - Map LDAP groups to [access control roles]({{< relref "/rs/security/ldap/map-ldap-groups-to-roles.md" >}})
 - Learn more about Redis Software [security & practices]({{< relref "/rs/security/" >}})
+    
+missing instruction for ordering acl rules :
+    
+to move the first rule down, the customer has to do the following:
+
+click on edit db button
+
+click on edit acl ( pencil icon next to the acl rule)
+
+the move-up/down arrows appear the rule became editable
+
+click on the arrow to move down the acl rule
+
+the acl rule is moved down
+
+click on the red x icon to cancel the edit 
+
+click on the update db button
